@@ -10,5 +10,5 @@ func SetupWebRoutes(router *gin.Engine) {
 
 	// web hooks
 	SignalFormatAPIController := web.NewBotController()
-	router.GET("/telegram-message-webhook", SignalFormatAPIController.Webhook)
+	router.POST("/telegram-message-webhook", SignalFormatAPIController.Webhook)
 }

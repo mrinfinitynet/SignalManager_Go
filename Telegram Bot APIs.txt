@@ -1,0 +1,3 @@
+https://api.telegram.org/bot7622721535:AAEmtKghAbiUcesLyCBGODdkJECY8BEOiaU/setWebhook?url=https://dev-manager.signalvision.ai/telegram-message-webhook
+https://api.telegram.org/bot7622721535:AAEmtKghAbiUcesLyCBGODdkJECY8BEOiaU/deleteWebhook
+https://api.telegram.org/bot7622721535:AAEmtKghAbiUcesLyCBGODdkJECY8BEOiaU/getWebhookInfo
