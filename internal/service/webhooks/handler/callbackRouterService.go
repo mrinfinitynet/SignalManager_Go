@@ -11,16 +11,17 @@ func NewCallbackRouterService() *CallbackRouterService {
 	return &CallbackRouterService{}
 }
 
-func (s *CallbackRouterService) Handle(c *gin.Context, data map[string]any) {
+func (s *CallbackRouterService) Handle(c *gin.Context, callbackQuery map[string]any) {
 	// Log incoming callback data
-	logger.Info("[CallbackRouter] Processing callback: %v", data)
+	logger.Info("[CallbackRouter] Processing callback query: %v", callbackQuery)
 
 	// TODO: Implement callback routing logic
+	// Example: callbackQuery["id"], callbackQuery["data"], callbackQuery["message"]
 
 	// Log successful processing
 	logger.Info("[CallbackRouter] Callback processed successfully")
 
 	c.JSON(200, gin.H{
-		"message": "callback processed",
+		"status": "ok",
 	})
 }
